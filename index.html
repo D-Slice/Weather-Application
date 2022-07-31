@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaQuery.css">
+    <title>Weather</title> 
+</head>
+<body>
+
+    <nav class="nav p-4 bg-black">
+        <div class="container d-flex justify-content-around align-items-center">
+            <div class="left-div d-flex align-items-center">
+                <img class="logo" src="images/logo@2x.png">
+                <div class="logo-title">
+                    <h1 class="text-white fw-bold">Weather</h1>
+                    <h6 class="tagline">tagline goes here</h6>
+                </div>
+            </div>
+            <div class="right-div">
+                <div class="dropdown text-white d-none">
+                    <i class="fa-solid fa-bars dropdown-toggle"  id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item active" href="#">Home</a></li>
+                      <li><a class="dropdown-item" href="#">News</a></li>
+                      <li><a class="dropdown-item" href="#">Live Cameras</a></li>
+                      <li><a class="dropdown-item" href="#">Photos</a></li>
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                  <ul class="list text-white list-unstyled d-flex">
+                      <li class="">
+                          <a href="#" class="text-decoration-none main-active">Home</a>
+                      </li>
+                      <li>
+                          <a href="#">News</a>
+                      </li>
+                      <li>
+                          <a href="#">Live Cameras</a>
+                      </li>
+                      <li>
+                          <a href="#">Photos</a>
+                      </li>
+                      <li>
+                          <a href="#">Contact</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-search">
+        <div class="container w-75">
+            <form class="position-relative">
+                <input type="text" class="form-control m-auto search" placeholder="Find your location">
+                <input type="button" class="submit" value="Find">
+            </form>
+        </div>
+    </div>
+    <div class="forecast container text-white">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="forecastCont">
+                    <div class="forecast-header d-flex justify-content-between">
+                        <p class="today"></p>
+                        <p class="today-date"></p>
+                    </div>
+                    <div class="forecast-body">
+                        <p class="location"></p>
+                        <div class="degree d-flex">
+                            <div class="degreeNum"></div>
+                            <div class="forecast-icon">
+                                <img src="" style="width:100px !important;">
+                            </div>
+                        </div>
+                        <div class="weather"></div>
+                        <div class="spanCont d-flex">
+                            <span>
+                                <img src="images/icon-umberella@2x.png" class="w-20">
+                                20%
+                            </span>
+                            <span>
+                                <img src="images/icon-wind@2x.png" class="w-20">
+                                <span></span>
+                            </span>
+                            <span>
+                                <img src="images/icon-compass@2x.png" class="w-20">
+                                East
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="forecastCont2">
+                    <div class="forecast-header">
+                        <p class="text-center secondDay"></p>
+                    </div>
+                    <div class="forecast-body hamada">
+                        <div class="forecast-icon2 text-center mt-4">
+                            <img src="">
+                        </div>
+                        <div class="degree2 text-center mt-2"></div>
+                        <div class="text-center min_temp1">
+                            
+                        </div>
+                        <div class="weather-1 text-center mb-80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div>
+                    <div class="forecastCont">
+                        <div class="forecast-header">
+                            <p class="text-center thirdDay"></p>
+                        </div>
+                        <div class="forecast-body hamada">
+                            <div class="forecast-icon3 text-center mt-4">
+                                <img src="">
+                            </div>
+                            <div class="degree3 text-center mt-2"></div>
+                            <div class="text-center min_temp2">
+                                
+                            </div>
+                            <div class="weather-2 text-center mb-80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="pb-5">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="subscribe position-relative">
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <input type="button" value="Subscribe" class="subBtn position-absolute">
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="javascript/jquery-3.6.0.js"></script>
+    <script src="javascript/variables.js"></script>
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+</html>

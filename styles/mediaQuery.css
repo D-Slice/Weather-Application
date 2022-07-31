@@ -1,0 +1,19 @@
+@media screen and (max-width: 992px){
+    .right-div .dropdown{
+        display: block !important;
+    }
+    .right-div .list{
+        display: none !important;
+    }
+    .container:first-of-type{
+        justify-content: space-between !important;
+    }
+}
+@media screen and (min-width: 992px){
+    .forecast-icon img{
+        width: 50px !important;
+    }
+    .degreeNum {
+        font-size: 50px;
+    }
+}
