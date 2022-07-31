@@ -91,5 +91,5 @@ thirdDay.innerHTML = afterTomorrow;
 
 (function(){
     let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    currentMonth.innerHTML = `${date.toLocaleDateString().slice(2, 3)} ${months[date.getMonth()]}`
+    currentMonth.innerHTML = `${date.toLocaleDateString().slice(2, 4)} ${months[date.getMonth()]}`
 })()
